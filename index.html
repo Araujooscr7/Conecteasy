@@ -3,84 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ConectaFácil - Portal Educativo de Inclusão Digital</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>ConectEasy - Conectando Oportunidades</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Header e Navegação -->
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <a href="#home"><i class="fas fa-handshake"></i> ConectaFácil</a>
-                </div>
-                <div class="nav-menu" id="nav-menu">
-                    <a href="#home" class="nav-link">Início</a>
-                    <a href="#problem" class="nav-link">O Problema</a>
-                    <a href="#solutions" class="nav-link">Soluções</a>
-                    <a href="#courses" class="nav-link">Cursos</a>
-                    <a href="#community" class="nav-link">Comunidade</a>
-                    <a href="#resources" class="nav-link">Recursos</a>
-                    <a href="#login" class="nav-link login-btn">Acessar</a>
-                </div>
-                <div class="hamburger" id="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h2>ConectEasy</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-login">Login</button>
+                <button class="btn-register">Cadastrar</button>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <!-- Seção Hero -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title animate-fade-up">Tecnologia <span class="highlight">Simplificada</span> para Todos</h1>
-                <p class="hero-subtitle animate-fade-up">O ConectaFácil é seu portal educativo para dominar o mundo digital e acessar serviços essenciais com confiança.</p>
-                <div class="hero-stats animate-fade-up">
-                    <div class="stat">
-                        <h3>72%</h3>
-                        <p>dos brasileiros têm dificuldade com serviços digitais</p>
-                    </div>
-                    <div class="stat">
-                        <h3>45%</h3>
-                        <p>não conseguem acessar benefícios sociais online</p>
-                    </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Conectando 
+                <span class="gradient-text">Tecnologia</span>
+                <br>Simplificada para Todos
+            </h1>
+            <p class="hero-description">
+               O ConectaFácil é seu portal educativo para dominar o mundo digital e acessar serviços essenciais com confiança..
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Começar Agora</button>
+                <button class="btn-secondary">
+                    <i class="fas fa-play"></i>
+                    Ver Demo
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>5000+</h3>
+                    <p>Pessoas Conectadas</p>
                 </div>
-                <div class="hero-buttons animate-fade-up">
-                    <a href="#courses" class="btn btn-primary">Começar Agora</a>
-                    <a href="#problem" class="btn btn-secondary">Entender o Problema</a>
+                <div class="stat">
+                    <h3>1000+</h3>
+                    <p>Conclusões</p>
+                </div>
+                <div class="stat">
+                    <h3>95%</h3>
+                    <p>Eficiência</p>
                 </div>
             </div>
-            <div class="hero-image animate-fade-in">
-                <div class="floating-element element-1">
-                    <i class="fas fa-mobile-alt"></i>
-                    <p>Dispositivos Móveis</p>
-                </div>
-                <div class="floating-element element-2">
-                    <i class="fas fa-university"></i>
-                    <p>Serviços Bancários</p>
-                </div>
-                <div class="floating-element element-3">
-                    <i class="fas fa-heartbeat"></i>
-                    <p>Saúde Digital</p>
-                </div>
-                <div class="main-visual">
-                    <div class="phone-mockup">
-                        <div class="phone-screen">
-                            <div class="app-icon">
-                                <i class="fas fa-university"></i>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1">
+                <i class="fas fa-briefcase"></i>
+                <p>Parcerias</p>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-user-tie"></i>
+                <p>Profissionais</p>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-handshake"></i>
+                <p>Conexões</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <p class="section-subtitle">Conheça nossa equipe de especialistas</p>
+            
+            <div class="team-grid">
+                <!-- Pessoa 1 -->
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="team-image">
+                                <img src="images/pessoa1.jpg" alt="Fundador">
+                                <div class="image-overlay"></div>
                             </div>
-                            <div class="app-icon">
-                                <i class="fas fa-heartbeat"></i>
+                            <h3>Pedro Henrique</h3>
+                            <p class="role">CEO & Fundador</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Pedro Henrique</h3>
+                            <p>+10 anos em tecnologia e negócios. Visionário por natureza.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
                             </div>
-                            <div class="app-icon">
-                                <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pessoa 2 -->
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="team-image">
+                                <img src="images/pessoa2.jpg" alt="CTO">
+                                <div class="image-overlay"></div>
                             </div>
-                            <div class="app-icon">
-                                <i class="fas fa-bus"></i>
+                            <h3>Kauã Araujo</h3>
+                            <p class="role">CTO</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Kauã Araujo</h3>
+                            <p>Especialista em engenharia de software e inovação tecnológica.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pessoa 3 -->
+                <div class="team-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="team-image">
+                                <img src="images/pessoa3.jpg" alt="Head of Growth">
+                                <div class="image-overlay"></div>
+                            </div>
+                            <h3>João Bispo</h3>
+                            <p class="role">Head of Growth</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>João Bispo</h3>
+                            <p>Expert em crescimento e estratégias de mercado.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -89,418 +159,123 @@
         </div>
     </section>
 
-    <!-- Seção O Problema -->
-    <section id="problem" class="problem">
+    <!-- Services Section -->
+    <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">A Exclusão Digital Afeta Todos</h2>
-            <p class="section-subtitle animate-on-scroll">Milhões de brasileiros são impedidos de acessar serviços essenciais por falta de habilidades digitais</p>
-            
-            <div class="problem-grid">
-                <div class="problem-card animate-on-scroll">
-                    <div class="problem-icon">
-                        <i class="fas fa-ban"></i>
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3>Serviços Bancários</h3>
-                    <p>45% dos idosos não conseguem usar internet banking, perdendo acesso a serviços financeiros básicos.</p>
-                </div>
-                
-                <div class="problem-card animate-on-scroll">
-                    <div class="problem-icon">
-                        <i class="fas fa-file-medical"></i>
-                    </div>
-                    <h3>Agendamentos de Saúde</h3>
-                    <p>60% das marcações de consultas são feitas online, excluindo quem não tem acesso ou conhecimento digital.</p>
-                </div>
-                
-                <div class="problem-card animate-on-scroll">
-                    <div class="problem-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Educação Online</h3>
-                    <p>30% dos estudantes têm dificuldade com plataformas de ensino digital, prejudicando seu aprendizado.</p>
-                </div>
-                
-                <div class="problem-card animate-on-scroll">
-                    <div class="problem-icon">
-                        <i class="fas fa-hand-holding-usd"></i>
-                    </div>
-                    <h3>Benefícios Sociais</h3>
-                    <p>Cadastros no Auxílio Brasil e outros programas exigem acesso digital, criando barreiras para os mais necessitados.</p>
-                </div>
-            </div>
-            
-            <div class="problem-impact animate-on-scroll">
-                <div class="impact-content">
-                    <h3>Impacto na Vida Real</h3>
-                    <p>A exclusão digital não é apenas sobre tecnologia - é sobre <strong>acesso a direitos básicos</strong>, <strong>oportunidades</strong> e <strong>cidadania plena</strong>.</p>
+                    <h3>Conteúdos Educativos Simples</h3>
+                    <p>Videoaulas passo a passo, tutoriais ilustrados e linguagem acessível para todos os níveis de conhecimento.</p>
                     <ul>
-                        <li><i class="fas fa-exclamation-circle"></i> Dificuldade em marcar consultas médicas</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Impossibilidade de acessar benefícios governamentais</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Barreiras para educação continuada</li>
-                        <li><i class="fas fa-exclamation-circle"></i> Isolamento social e familiar</li>
+                        <li>Linguagem clara e direta</li>
+                           <li>Exemplos do dia a dia</li>
+                            <li>Progressão gradual</li>
+                        
                     </ul>
                 </div>
-                <div class="impact-visual">
-                    <div class="impact-card">
-                        <div class="persona">
-                            <div class="avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <h4>Dona Maria, 68 anos</h4>
-                            <p>"Não consigo marcar consultas pelo celular e perdi meu auxílio porque não soube renovar o cadastro online."</p>
-                        </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
+                    <h3>Suporte Comunitário</h3>
+                    <p>Rede de voluntários digitais e grupos de apoio para tirar dúvidas e oferecer ajuda personalizada.</p>
+                    <ul>
+                        <li>Tutores voluntários</li>
+                        <li>Grupos de WhatsApp</li>
+                        <li>Encontros presenciais</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Ferramentas Simplificadas</h3>
+                    <p>Interfaces adaptadas para iniciantes e aplicativos com navegação intuitiva para serviços essenciais.</p>
+                    <ul>
+                        <li>Navegação simplificada</li>
+                        <li>Botões grandes e claros</li>
+                        <li>Assistente virtual</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Soluções -->
-    <section id="solutions" class="solutions">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title animate-on-scroll">Como o ConectaFácil Transforma Vidas</h2>
-            <p class="section-subtitle animate-on-scroll">Uma abordagem completa para inclusão digital</p>
-            
-            <div class="solutions-grid">
-                <div class="solution-card animate-on-scroll">
-                    <div class="solution-number">01</div>
-                    <div class="solution-content">
-                        <h3>Conteúdos Educativos Simples</h3>
-                        <p>Videoaulas passo a passo, tutoriais ilustrados e linguagem acessível para todos os níveis de conhecimento.</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Linguagem clara e direta</li>
-                            <li><i class="fas fa-check"></i> Exemplos do dia a dia</li>
-                            <li><i class="fas fa-check"></i> Progressão gradual</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="solution-card animate-on-scroll">
-                    <div class="solution-number">02</div>
-                    <div class="solution-content">
-                        <h3>Suporte Comunitário</h3>
-                        <p>Rede de voluntários digitais e grupos de apoio para tirar dúvidas e oferecer ajuda personalizada.</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Tutores voluntários</li>
-                            <li><i class="fas fa-check"></i> Grupos de WhatsApp</li>
-                            <li><i class="fas fa-check"></i> Encontros presenciais</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="solution-card animate-on-scroll">
-                    <div class="solution-number">03</div>
-                    <div class="solution-content">
-                        <h3>Ferramentas Simplificadas</h3>
-                        <p>Interfaces adaptadas para iniciantes e aplicativos com navegação intuitiva para serviços essenciais.</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Navegação simplificada</li>
-                            <li><i class="fas fa-check"></i> Botões grandes e claros</li>
-                            <li><i class="fas fa-check"></i> Assistente virtual</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="solution-demo animate-on-scroll">
-                <h3>Interface ConectaFácil</h3>
-                <p>Veja como simplificamos o acesso aos serviços:</p>
-                <div class="demo-container">
-                    <div class="demo-screen">
-                        <div class="demo-header">
-                            <h4>Serviços Essenciais</h4>
-                        </div>
-                        <div class="demo-apps">
-                            <div class="demo-app">
-                                <i class="fas fa-university"></i>
-                                <span>Banco</span>
-                            </div>
-                            <div class="demo-app">
-                                <i class="fas fa-heartbeat"></i>
-                                <span>Saúde</span>
-                            </div>
-                            <div class="demo-app">
-                                <i class="fas fa-file-alt"></i>
-                                <span>Documentos</span>
-                            </div>
-                            <div class="demo-app">
-                                <i class="fas fa-bus"></i>
-                                <span>Transporte</span>
-                            </div>
-                        </div>
-                        <div class="demo-assistant">
-                            <i class="fas fa-robot"></i>
-                            <p>Precisa de ajuda? Toque aqui!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Cursos -->
-    <section id="courses" class="courses">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Cursos de Alfabetização Digital</h2>
-            <p class="section-subtitle animate-on-scroll">Aprenda no seu ritmo, com conteúdo feito para iniciantes</p>
-            
-            <div class="courses-grid">
-                <div class="course-card animate-on-scroll">
-                    <div class="course-badge">Mais Procurado</div>
-                    <div class="course-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Smartphone para Iniciantes</h3>
-                    <p>Aprenda a usar seu celular desde o básico: ligar, mensagens, fotos e aplicativos essenciais.</p>
-                    <div class="course-meta">
-                        <span><i class="far fa-clock"></i> 8 horas</span>
-                        <span><i class="far fa-user"></i> 15.2k alunos</span>
-                    </div>
-                    <a href="#" class="btn btn-outline">Começar Curso</a>
-                </div>
-                
-                <div class="course-card animate-on-scroll">
-                    <div class="course-badge">Gratuito</div>
-                    <div class="course-icon">
-                        <i class="fas fa-wifi"></i>
-                    </div>
-                    <h3>Internet Básica</h3>
-                    <p>Navegação segura, e-mail, redes sociais e como encontrar informações confiáveis online.</p>
-                    <div class="course-meta">
-                        <span><i class="far fa-clock"></i> 6 horas</span>
-                        <span><i class="far fa-user"></i> 12.8k alunos</span>
-                    </div>
-                    <a href="#" class="btn btn-outline">Começar Curso</a>
-                </div>
-                
-                <div class="course-card animate-on-scroll">
-                    <div class="course-badge">Novo</div>
-                    <div class="course-icon">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <h3>Banco Digital</h3>
-                    <p>Aprenda a usar internet banking, fazer transferências, pagar contas e usar PIX com segurança.</p>
-                    <div class="course-meta">
-                        <span><i class="far fa-clock"></i> 5 horas</span>
-                        <span><i class="far fa-user"></i> 8.5k alunos</span>
-                    </div>
-                    <a href="#" class="btn btn-outline">Começar Curso</a>
-                </div>
-                
-                <div class="course-card animate-on-scroll">
-                    <div class="course-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Saúde Digital</h3>
-                    <p>Marcar consultas online, acessar resultados de exames e usar aplicativos de saúde.</p>
-                    <div class="course-meta">
-                        <span><i class="far fa-clock"></i> 4 horas</span>
-                        <span><i class="far fa-user"></i> 6.3k alunos</span>
-                    </div>
-                    <a href="#" class="btn btn-outline">Começar Curso</a>
-                </div>
-            </div>
-            
-            <div class="courses-cta animate-on-scroll">
-                <div class="cta-content">
-                    <h3>Precisa de ajuda personalizada?</h3>
-                    <p>Nossos tutores estão disponíveis para tirar suas dúvidas individualmente</p>
-                    <a href="#" class="btn btn-primary">Falar com Tutor</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Comunidade -->
-    <section id="community" class="community">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Comunidade ConectaFácil</h2>
-            <p class="section-subtitle animate-on-scroll">Juntos somos mais fortes - faça parte da nossa rede de apoio</p>
-            
-            <div class="community-content">
-                <div class="community-features">
-                    <div class="community-feature animate-on-scroll">
-                        <i class="fas fa-users"></i>
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Grupos de Apoio</h4>
-                            <p>Participe de grupos no WhatsApp e Telegram para trocar experiências e tirar dúvidas.</p>
+                            <h3>Email</h3>
+                            <p>contato@conecteasy.com</p>
                         </div>
                     </div>
-                    
-                    <div class="community-feature animate-on-scroll">
-                        <i class="fas fa-hands-helping"></i>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Voluntários Digitais</h4>
-                            <p>Nossa rede de voluntários oferece suporte individual para quem precisa de ajuda extra.</p>
+                            <h3>Telefone</h3>
+                            <p>(11) 9999-9999</p>
                         </div>
                     </div>
-                    
-                    <div class="community-feature animate-on-scroll">
+                    <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Encontros Presenciais</h4>
-                            <p>Workshops e encontros em bibliotecas e centros comunitários de várias cidades.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="community-feature animate-on-scroll">
-                        <i class="fas fa-shield-alt"></i>
-                        <div>
-                            <h4>Espaço Seguro</h4>
-                            <p>Ambiente livre de julgamentos onde todos podem aprender no seu próprio ritmo.</p>
+                            <h3>Localização</h3>
+                            <p>São Paulo, SP</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="community-visual animate-on-scroll">
-                    <div class="community-stats">
-                        <div class="community-stat">
-                            <h3>25.000+</h3>
-                            <p>Membros da comunidade</p>
-                        </div>
-                        <div class="community-stat">
-                            <h3>1.200+</h3>
-                            <p>Voluntários ativos</p>
-                        </div>
-                        <div class="community-stat">
-                            <h3>85+</h3>
-                            <p>Cidades com encontros</p>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <div class="testimonial-content">
-                            <p>"Graças ao grupo de apoio, consegui ajudar minha mãe a fazer videochamadas com a família. Ela se sente menos sozinha agora."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="author-info">
-                                <h4>Carlos Silva</h4>
-                                <p>Voluntário e filho de aluna</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Seção Recursos -->
-    <section id="resources" class="resources">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">Recursos Gratuitos</h2>
-            <p class="section-subtitle animate-on-scroll">Materiais didáticos, ferramentas e guias para facilitar seu dia a dia digital</p>
-            
-            <div class="resources-grid">
-                <div class="resource-card animate-on-scroll">
-                    <div class="resource-icon">
-                        <i class="fas fa-download"></i>
-                    </div>
-                    <h3>Guias Práticos</h3>
-                    <p>Manuais ilustrados para baixar e consultar offline.</p>
-                    <a href="#" class="resource-link">Baixar Guias <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="resource-card animate-on-scroll">
-                    <div class="resource-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Videoaulas</h3>
-                    <p>Mais de 200 vídeos curtos e objetivos no YouTube.</p>
-                    <a href="#" class="resource-link">Ver Canais <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="resource-card animate-on-scroll">
-                    <div class="resource-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Ferramentas</h3>
-                    <p>Aplicativos simplificados para serviços essenciais.</p>
-                    <a href="#" class="resource-link">Explorar Ferramentas <i class="fas fa-arrow-right"></i></a>
-                </div>
-                
-                <div class="resource-card animate-on-scroll">
-                    <div class="resource-icon">
-                        <i class="fas fa-question-circle"></i>
-                    </div>
-                    <h3>Central de Ajuda</h3>
-                    <p>Perguntas frequentes e suporte técnico.</p>
-                    <a href="#" class="resource-link">Obter Ajuda <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="resources-newsletter animate-on-scroll">
-                <div class="newsletter-content">
-                    <h3>Fique por Dentro</h3>
-                    <p>Receba novidades, dicas e avisos sobre novos cursos e recursos</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Seu melhor e-mail" required>
-                        <button type="submit" class="btn btn-primary">Inscrever</button>
-                    </form>
-                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3><i class="fas fa-handshake"></i> ConectaFácil</h3>
-                    <p>Portal educativo e colaborativo para inclusão digital e acesso simplificado à tecnologia.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
+                    <h3>ConectEasy</h3>
+                    <p>O ConectaFácil é seu portal educativo para dominar o mundo digital e acessar serviços essenciais com confiança.</p>
                 </div>
-                
                 <div class="footer-section">
-                    <h4>Cursos</h4>
+                    <h4>Links Rápidos</h4>
                     <ul>
-                        <li><a href="#">Smartphone para Iniciantes</a></li>
-                        <li><a href="#">Internet Básica</a></li>
-                        <li><a href="#">Banco Digital</a></li>
-                        <li><a href="#">Saúde Digital</a></li>
-                        <li><a href="#">Todos os Cursos</a></li>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
-                    <h4>Recursos</h4>
+                    <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Guias Práticos</a></li>
-                        <li><a href="#">Videoaulas</a></li>
-                        <li><a href="#">Ferramentas</a></li>
-                        <li><a href="#">Central de Ajuda</a></li>
-                        <li><a href="#">Comunidade</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contato</h4>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> contato@conectafacil.org</li>
-                        <li><i class="fab fa-whatsapp"></i> (11) 99999-9999</li>
-                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                        <li><a href="#">Cookies</a></li>
                     </ul>
                 </div>
             </div>
-            
             <div class="footer-bottom">
-                <p>&copy; 2023 ConectaFácil. Todos os direitos reservados.</p>
-                <p>Inclusão digital é um direito de todos.</p>
+                <p>&copy; 2024 ConectEasy. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <!-- Botão Voltar ao Topo -->
-    <button id="back-to-top" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
 
     <script src="script.js"></script>
 </body>
